@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    tools:context=".HomeActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="30dp"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/btnadditem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/btn_gradient"
+                android:text="Add New"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:paddingStart="5dp">
+
+            <ImageView
+                android:id="@+id/p1"
+                android:layout_width="188dp"
+                android:layout_height="200dp"
+                android:layout_marginStart="40dp"
+                app:srcCompat="@drawable/p1" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtView4"
+                    android:layout_width="154dp"
+                    android:layout_height="61dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Item1"
+                    android:textSize="38sp" />
+
+                <TextView
+                    android:id="@+id/txtView5"
+                    android:layout_width="154dp"
+                    android:layout_height="61dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:text="190 BDT"
+                    android:textSize="28sp" />
+
+                <TextView
+                    android:id="@+id/txtView6"
+                    android:layout_width="154dp"
+                    android:layout_height="61dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_weight="1"
+                    android:text="In stock"
+                    android:textSize="28sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingStart="5dp">
+
+            <ImageView
+                android:id="@+id/p2"
+                android:layout_width="188dp"
+                android:layout_height="200dp"
+                android:layout_marginStart="40dp"
+                app:srcCompat="@drawable/p2" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="154dp"
+                    android:layout_height="61dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Item2"
+                    android:textSize="38sp" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="154dp"
+                    android:layout_height="61dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:text="90 BDT"
+                    android:textSize="28sp" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="154dp"
+                    android:layout_height="61dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_weight="1"
+                    android:text="In stock"
+                    android:textSize="28sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
