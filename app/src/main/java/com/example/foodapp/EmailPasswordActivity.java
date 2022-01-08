@@ -97,11 +97,24 @@ public class EmailPasswordActivity extends AppCompatActivity {
                         @Override
                         public void onComplete(@NonNull Task<Void> task) {
                             // Email sent
+                            Log.d("Sign Up Verification","Sending Email for Verification");
                         }
                     });
         }
 
         // [END send_email_verification]
+    }
+
+    public boolean signUp(String email, String password) {
+        try {
+
+            createAccount(email, password);
+            sendEmailVerification();
+            return true;
+        } catch (Error error) {
+            Log.d("Error creating account", error.getMessage());
+        }
+        return false;
     }
 
     private void reload() {
