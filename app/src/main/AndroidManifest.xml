@@ -13,6 +13,9 @@
             android:name=".HomeActivity"
             android:exported="true" />
         <activity
+            android:name=".EmailPasswordActivity"
+            android:exported="false" />
+        <activity
             android:name=".SignInActivity"
             android:exported="true" />
         <activity

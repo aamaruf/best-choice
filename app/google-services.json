@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "520446782492",
+    "project_id": "inventory-management-42e1a",
+    "storage_bucket": "inventory-management-42e1a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:520446782492:android:eeaabf1661f3241b34c3d9",
+        "android_client_info": {
+          "package_name": "com.example.foodapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "520446782492-lppc1tv4ori63ket1vbj6lup1b4f4t5j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHroV4W0Rt5PR6mzOqeNujogjIa2CoqC4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "520446782492-lppc1tv4ori63ket1vbj6lup1b4f4t5j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

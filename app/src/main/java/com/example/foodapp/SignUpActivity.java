@@ -1,31 +1,41 @@
 package com.example.foodapp;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
-public class SignUpActivity extends AppCompatActivity {
+import java.util.Objects;
+
+public class SignUpActivity extends EmailPasswordActivity {
     TextView alreadysignin;
+    Button signupBtn;
+
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
-        getSupportActionBar().setTitle("Signup");
+        Objects.requireNonNull(getSupportActionBar()).setTitle("Signup");
 
 
         alreadysignin = findViewById(R.id.alreadysignin);
+        signupBtn = findViewById(R.id.signupBtn);
 
 
-        alreadysignin.setOnClickListener(new View.OnClickListener() {
+        alreadysignin.setOnClickListener(view -> {
+//                Toast.makeText(MainActivity.this, "clicked signin", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(SignUpActivity.this, SignInActivity.class);
+            startActivity(intent);
+        });
+//       on click Signup Button
+        signupBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                Toast.makeText(MainActivity.this, "clicked signin", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(SignUpActivity.this, SignInActivity.class);
-                startActivity(intent);
+                // confirms password and confirm password matches
+                Toast.makeText(SignUpActivity.this, "Signing Up Success!", Toast.LENGTH_LONG).show();
             }
         });
     }
