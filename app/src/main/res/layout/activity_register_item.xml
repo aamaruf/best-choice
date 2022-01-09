@@ -4,9 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".SignUpActivity">
-
+    tools:context=".RegisterItemActivity"
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -23,11 +22,12 @@
             android:orientation="vertical">
 
 
-            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/addItemImage"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
-                android:src="@drawable/profile"
+                android:layout_marginTop="55dp"
+                android:src="@drawable/itemlogo"
                 app:civ_border_color="@color/googlecolor"
                 app:civ_border_width="2dp" />
 
@@ -57,7 +57,7 @@
                 android:layout_marginBottom="20dp"
                 android:background="@drawable/backgroundeditview"
                 android:ems="10"
-                android:hint="Full Name"
+                android:hint="Item Name"
                 android:inputType="textPersonName"
                 android:minHeight="48dp"
                 android:padding="10dp" />
@@ -69,8 +69,8 @@
                 android:layout_marginBottom="20dp"
                 android:background="@drawable/backgroundeditview"
                 android:ems="10"
-                android:hint="01639409383"
-                android:inputType="phone"
+                android:hint="500"
+                android:inputType="number"
                 android:minHeight="48dp"
                 android:padding="10dp" />
 
@@ -81,20 +81,8 @@
                 android:layout_marginBottom="20dp"
                 android:background="@drawable/backgroundeditview"
                 android:ems="10"
-                android:hint="aamaruf131@gmail.com"
-                android:inputType="textEmailAddress"
-                android:minHeight="48dp"
-                android:padding="10dp" />
-
-            <EditText
-                android:id="@+id/signupPassword"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
-                android:background="@drawable/backgroundeditview"
-                android:ems="10"
-                android:hint="Password"
-                android:inputType="textPassword"
+                android:hint="Item Description"
+                android:inputType="text"
                 android:minHeight="48dp"
                 android:padding="10dp" />
 
@@ -104,7 +92,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/btn_gradient"
-                android:text="Sign Up"
+                android:text="Save"
                 android:textStyle="bold" />
 
             <TextView
@@ -113,7 +101,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="Already have account? Sign In"
+                android:text="Go Back"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 

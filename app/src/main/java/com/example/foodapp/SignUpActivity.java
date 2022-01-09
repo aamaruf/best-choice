@@ -2,7 +2,6 @@ package com.example.foodapp;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -24,10 +23,10 @@ public class SignUpActivity extends EmailPasswordActivity {
         Objects.requireNonNull(getSupportActionBar()).setTitle("Signup");
 
 
-        alreadysignin = findViewById(R.id.alreadysignin);
-        signupBtn = findViewById(R.id.signupBtn);
+        alreadysignin = findViewById(R.id.returnMenuItem);
+        signupBtn = findViewById(R.id.addItemBtn);
         signupPassword = findViewById(R.id.signupPassword);
-        signupEmailAddress = findViewById(R.id.signupEmailAddress);
+        signupEmailAddress = findViewById(R.id.addItemDescription);
 
 
         alreadysignin.setOnClickListener(view -> {
