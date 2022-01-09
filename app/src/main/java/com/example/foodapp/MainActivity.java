@@ -51,7 +51,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 //                Toast.makeText(MainActivity.this, "clicked tbskip", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(MainActivity.this, HomeActivity.class);
+//                Intent intent = new Intent(MainActivity.this, HomeActivity.class);
+                Intent intent = new Intent(MainActivity.this, MenuItemActivity.class);
                 startActivity(intent);
             }
         });

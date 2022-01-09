@@ -42,7 +42,8 @@ public class SignUpActivity extends EmailPasswordActivity {
             String email = signupEmailAddress.getText().toString();
             String password = signupPassword.getText().toString();
             if (signUp(email, password)) {
-                Intent intent = new Intent(SignUpActivity.this, HomeActivity.class);
+//                Intent intent = new Intent(SignUpActivity.this, HomeActivity.class);
+                Intent intent = new Intent(SignUpActivity.this, MenuItemActivity.class);
                 startActivity(intent);
                 Toast.makeText(SignUpActivity.this, "Signing Up Success!", Toast.LENGTH_LONG).show();
             } else {
