@@ -24,10 +24,10 @@ public class RegisterItemActivity extends AppCompatActivity {
 
 
         returnMenuItem = findViewById(R.id.returnMenuItem);
-        addItemBtn = findViewById(R.id.addItemBtn);
+        addItemBtn = findViewById(R.id.signinBtn);
         addItemName = findViewById(R.id.addItemName);
         addItemPrice = findViewById(R.id.addItemPrice);
-        addItemDescription = findViewById(R.id.addItemDescription);
+        addItemDescription = findViewById(R.id.signInEmail);
 
 
 
