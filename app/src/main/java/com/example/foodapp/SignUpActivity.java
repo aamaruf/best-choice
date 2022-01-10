@@ -24,9 +24,9 @@ public class SignUpActivity extends EmailPasswordActivity {
 
 
         alreadysignin = findViewById(R.id.returnMenuItem);
-        signupBtn = findViewById(R.id.addItemBtn);
-        signupPassword = findViewById(R.id.signupPassword);
-        signupEmailAddress = findViewById(R.id.addItemDescription);
+        signupBtn = findViewById(R.id.signinBtn);
+        signupPassword = findViewById(R.id.signInPassword);
+        signupEmailAddress = findViewById(R.id.signInEmail);
 
 
         alreadysignin.setOnClickListener(view -> {
@@ -40,14 +40,21 @@ public class SignUpActivity extends EmailPasswordActivity {
 //                if ()
             String email = signupEmailAddress.getText().toString();
             String password = signupPassword.getText().toString();
-            if (signUp(email, password)) {
+            if (email.length() > 0 && password.length() > 0) {
+                if (signUp(email, password)) {
 //                Intent intent = new Intent(SignUpActivity.this, HomeActivity.class);
-                Intent intent = new Intent(SignUpActivity.this, MenuItemActivity.class);
-                startActivity(intent);
-                Toast.makeText(SignUpActivity.this, "Signing Up Success!", Toast.LENGTH_LONG).show();
-            } else {
-                Toast.makeText(SignUpActivity.this, "Signing Failed!", Toast.LENGTH_LONG).show();
+                    Intent intent = new Intent(SignUpActivity.this, SignInActivity.class);
+                    startActivity(intent);
+                    Toast.makeText(SignUpActivity.this, "Signing Up Success!", Toast.LENGTH_LONG).show();
+                    finish();
+                } else {
+                    Toast.makeText(SignUpActivity.this, "Signing Failed!", Toast.LENGTH_LONG).show();
+                }
+            }else{
+                Toast.makeText(SignUpActivity.this, "Required fields are empty!", Toast.LENGTH_LONG).show();
             }
+
+
         });
     }
 }
