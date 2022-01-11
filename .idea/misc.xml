@@ -15,8 +15,11 @@
         <entry key="..\:/best-choice/app/src/main/res/layout/activity_register_item.xml" value="0.215625" />
         <entry key="..\:/best-choice/app/src/main/res/layout/activity_sign_up.xml" value="0.215625" />
         <entry key="..\:/best-choice/app/src/main/res/layout/menu_items.xml" value="0.215625" />
+        <entry key="app/src/main/res/layout/activity_menu_item.xml" value="0.2869791666666667" />
+        <entry key="app/src/main/res/layout/activity_register_item.xml" value="0.2869791666666667" />
         <entry key="app/src/main/res/layout/activity_sign_in.xml" value="0.18" />
         <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.15670289855072464" />
+        <entry key="app/src/main/res/layout/menu_items.xml" value="0.2869791666666667" />
       </map>
     </option>
   </component>

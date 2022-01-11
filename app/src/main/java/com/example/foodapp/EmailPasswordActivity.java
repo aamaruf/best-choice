@@ -27,7 +27,7 @@ public class EmailPasswordActivity extends AppCompatActivity {
         // [START initialize_auth]
         // Initialize Firebase Auth
         mAuth = FirebaseAuth.getInstance();
-        mAuth.useEmulator("10.0.2.2", 9099);
+//        mAuth.useEmulator("10.0.2.2", 9099);
         // [END initialize_auth]
     }
 
