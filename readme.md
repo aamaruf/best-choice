@@ -10,4 +10,4 @@ It has initially module for
  - Register Admin
  - Admin Login
 # Panel
- - Add menu item
+ - Add menu item..
